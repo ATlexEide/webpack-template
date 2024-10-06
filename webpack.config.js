@@ -13,6 +13,7 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
     entry: './src/index.js',
+    devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename:'[name].[fullhash].bundle.js',
