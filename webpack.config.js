@@ -15,10 +15,12 @@ const config = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
+        filename:'[name].[fullhash].bundle.js',
     },
     devServer: {
         open: true,
         host: 'localhost',
+        liveReload: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
