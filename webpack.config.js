@@ -21,6 +21,7 @@ const config = {
     devServer: {
         open: true,
         host: 'localhost',
+        hot: false,
         liveReload: true,
     },
     plugins: [
