@@ -16,6 +16,7 @@ const config = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename:'[name].[fullhash].bundle.js',
+        clean: true,
     },
     devServer: {
         open: true,
